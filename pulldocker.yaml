@@ -35,6 +35,9 @@ REPOSITORY_DIR: /opt/docker-compose/cloud8-nginx
 NAME: Pastey
 REPOSITORY_DIR: /opt/docker-compose/cloud8-pastey
 ---
+NAME: Uptime
+REPOSITORY_DIR: /opt/docker-compose/cloud8-uptime-kuma
+---
 NAME: Yourls
 REPOSITORY_DIR: /opt/docker-compose/cloud8-yourls
 ---

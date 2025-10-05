@@ -32,4 +32,7 @@ REPOSITORY_DIR: /opt/docker-compose/cloud8-nginx-proxy-manager
 NAME: NGINX
 REPOSITORY_DIR: /opt/docker-compose/cloud8-nginx
 ---
+NAME: Pastey
+REPOSITORY_DIR: /opt/docker-compose/cloud8-pastey
+---
 

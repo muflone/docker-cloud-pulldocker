@@ -1,6 +1,6 @@
 NAME: Common
 COMMON: true
-STATUS: false
+STATUS: true
 REMOTES:
   - origin
 TAGS:
@@ -11,11 +11,12 @@ BUILD: false
 RECREATE: true
 PROGRESS: true
 BEGIN:
-  - printf '${DATE} ${TIME} %-15s BEGIN  %-4d ${COMMIT_HASH} ${COMMIT_DATE} ${COMMIT_TIME} > ${COMMIT_SUMMARY}\n' '${NAME}' '${COMMITS_COUNT}'
+  - printf '${DATE} ${TIME} BEGIN  %-20s ${COMMIT_HASH} %-4d ${COMMIT_DATE} ${COMMIT_TIME} > ${COMMIT_SUMMARY}\n' '${NAME}' '${COMMITS_COUNT}'
 BEFORE:
-  - printf '${DATE} ${TIME} %-15s BEFORE %-4d ${COMMIT_HASH} ${COMMIT_DATE} ${COMMIT_TIME} > Deploying update...\n' '${NAME}' '${COMMITS_COUNT}'
+  - printf '${DATE} ${TIME} BEFORE %-20s Deploying update...\n' '${NAME}'
 AFTER:
-  - printf '${DATE} ${TIME} %-15s AFTER  %-4d ${COMMIT_HASH} ${COMMIT_DATE} ${COMMIT_TIME} > Deployment completed\n' '${NAME}' '${COMMITS_COUNT}'
+  - printf '${DATE} ${TIME} AFTER  %-20s Deployment completed\n' '${NAME}'
 END:
-  - printf '${DATE} ${TIME} %-15s END    %-4d ${COMMIT_HASH} ${COMMIT_DATE} ${COMMIT_TIME} > ${COMMIT_SUMMARY}\n' '${NAME}' '${COMMITS_COUNT}'
+  - printf '${DATE} ${TIME} END    %-20s ${COMMIT_HASH} %-4d ${COMMIT_DATE} ${COMMIT_TIME} > ${COMMIT_SUMMARY}\n' '${NAME}' '${COMMITS_COUNT}'
 ---
+

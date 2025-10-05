@@ -1,0 +1,8 @@
+[Unit]
+Description=Pulldocker
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/pulldocker
+ExecStart=/opt/pulldocker/venv/bin/pulldocker --configuration pulldocker.yaml --quiet

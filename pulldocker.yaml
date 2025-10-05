@@ -23,6 +23,9 @@ NAME: Pulldocker
 REPOSITORY_DIR: /opt/pulldocker
 COMMAND: "systemctl daemon-reload"
 ---
+NAME: MariaDB
+REPOSITORY_DIR: /opt/docker-compose/cloud8-mariadb
+---
 NAME: NGINX PM
 REPOSITORY_DIR: /opt/docker-compose/cloud8-nginx-proxy-manager
 ---

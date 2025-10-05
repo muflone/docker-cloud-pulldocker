@@ -26,4 +26,7 @@ COMMAND: "systemctl daemon-reload"
 NAME: NGINX PM
 REPOSITORY_DIR: /opt/docker-compose/cloud8-nginx-proxy-manager
 ---
+NAME: NGINX
+REPOSITORY_DIR: /opt/docker-compose/cloud8-nginx
+---
 

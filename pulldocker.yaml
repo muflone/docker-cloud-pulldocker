@@ -23,4 +23,7 @@ NAME: Pulldocker
 REPOSITORY_DIR: /opt/pulldocker
 COMMAND: "systemctl daemon-reload"
 ---
+NAME: NGINX PM
+REPOSITORY_DIR: /opt/docker-compose/cloud8-nginx-proxy-manager
+---
 

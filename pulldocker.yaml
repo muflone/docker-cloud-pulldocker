@@ -19,7 +19,6 @@ AFTER:
 END:
   - printf '${DATE} ${TIME} END    %-20s ${COMMIT_HASH} %-4d ${COMMIT_DATE} ${COMMIT_TIME} > ${COMMIT_SUMMARY}\n' '${NAME}' '${COMMITS_COUNT}'
 ---
----
 NAME: Pulldocker
 REPOSITORY_DIR: /opt/pulldocker
 COMMAND: "systemctl daemon-reload"

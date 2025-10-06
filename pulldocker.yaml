@@ -28,6 +28,12 @@ REPOSITORY_DIR: /opt/docker-compose/cloud8-mariadb
 ---
 NAME: Nextcloud
 REPOSITORY_DIR: /opt/docker-compose/cloud8-nextcloud
+AFTER:
+  - printf '${DATE} ${TIME} AFTER  %-20s Upgrading nextcloud...\n' '${NAME}'
+  - ./nextcloud_upgrade.sh
+  - printf '${DATE} ${TIME} AFTER  %-20s Executing nextcloud cron jobs...\n' '${NAME}'
+  - ./nextcloud_cron.sh
+  - printf '${DATE} ${TIME} AFTER  %-20s Deployment completed\n' '${NAME}'
 ---
 NAME: NGINX PM
 REPOSITORY_DIR: /opt/docker-compose/cloud8-nginx-proxy-manager

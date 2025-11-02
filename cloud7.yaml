@@ -26,3 +26,6 @@ COMMAND: "systemctl daemon-reload"
 NAME: NGINX PM
 REPOSITORY_DIR: /opt/docker-compose/cloud7-nginx-proxy-manager
 ---
+NAME: ArchWiki Bot
+REPOSITORY_DIR: /opt/docker-compose/cloud7-archwiki_bot
+---

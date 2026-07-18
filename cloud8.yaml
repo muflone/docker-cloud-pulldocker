@@ -29,6 +29,9 @@ REPOSITORY_DIR: /opt/docker-compose/cloud8-borgmatic
 NAME: MariaDB
 REPOSITORY_DIR: /opt/docker-compose/cloud8-mariadb
 ---
+NAME: Muflopping
+REPOSITORY_DIR: /opt/docker-compose/cloud8-muflopping
+---
 NAME: Nextcloud
 REPOSITORY_DIR: /opt/docker-compose/cloud8-nextcloud
 AFTER:
